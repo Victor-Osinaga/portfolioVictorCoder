@@ -1,0 +1,16 @@
+#footer {
+	color: $subtitle-color;
+	background-color: rgba(0, 0, 0, 0.9);
+	padding: 30px;
+	text-align: center;
+	font-size: 14px;
+
+        & .container p a {
+            color: $subtitle-color;
+            text-decoration: none;
+
+                &:hover {
+                    color: $neon-color;
+                }
+        }
+}

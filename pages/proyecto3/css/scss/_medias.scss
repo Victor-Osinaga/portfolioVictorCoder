@@ -1,0 +1,161 @@
+$breakpoints: (
+    md: 767px,
+    lg: 991px,
+);
+
+@mixin breakpoints ($size) {
+    @if map-has-key($breakpoints, $size ) {
+        @media (max-width: #{map-get($breakpoints, $size)})
+        {
+            @content;
+        }
+    }
+}
+
+@include breakpoints (lg) {
+
+    .nav {
+        height: 50px;
+        & .contenedor {
+
+            & .form {
+                display: none;
+            }
+
+            & .navegacion__menu {
+                display: flex;
+                margin: auto 0;
+                font-size: 30px;
+            }
+
+            & .navegacion__links {
+                
+                position: absolute;
+                width: 100%;
+                height: 100vh;
+                flex-direction: column;
+                gap: 10px;
+                background: rgba(0, 0, 0, 0.97);
+                font-size: 30px;
+                margin: 0 -20px;
+                z-index: 10;
+                transform: translateX(100%);
+                opacity: 0;
+                transition: all 0.5s;
+
+                & .navegacion__link {
+                    padding-left: 0px;
+                    margin-top: 30px;
+
+                    & .submenu {
+                        display: none;
+                    }
+
+                    &:hover > .submenu {
+                        display: none;
+                    }
+                }
+
+                &.visible {
+                    display: flex;
+                    transform: translateX(0);
+                    opacity: 1;
+                    transition: all 0.5s;
+                    padding: 0;
+                    width: 100%;
+                    height: 100vh;
+                }
+            }
+        }
+    }
+
+    .productos {
+        & .container {
+            & .productos__grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 10px;
+            }
+        }
+    }
+}
+
+@include breakpoints (md) {
+
+    .home {
+        min-height: 100vh;
+        width: 100%;
+        position: relative;
+        padding: 0;
+        
+        & .home__bg {
+            background-image: url(../assets/bg.jpg);
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+        }
+    
+        & .home__description {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+
+            & .home__description--title {
+                font-size: 35px;
+            }
+
+            & .home__description--subtitle {
+                font-size: 20px;
+                margin-bottom: 50px;
+            }
+
+            & .form2 {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+    
+                & input {
+                    display: flex;
+                    min-width: 80%;
+                    height: 30px;
+                    text-align: center;
+                    box-shadow: none;
+                    outline: none;
+                    border: none;
+
+                    &::placeholder {
+                        color: purple;
+                    }
+                }
+            }
+        }
+    }
+
+    .productos {
+        & .container {
+            & .productos__grid {
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 10px;
+            }
+        }
+    }
+
+    .footer {
+        background: purple;
+        padding: 5px 0;
+        & .container {
+            & p, a {
+                color: white;
+                font-size: 16px;
+            }
+        }
+    }
+}

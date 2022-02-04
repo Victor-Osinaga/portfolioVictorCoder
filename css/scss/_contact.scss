@@ -1,0 +1,41 @@
+.contact__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+
+        & a {
+            text-decoration: none;
+        }
+
+    & .contact__item {
+        background: $alternative-black-color;
+        color: $subtitle-color;
+        padding: 50px;
+        border-radius: 10px;
+        transition: all 0.3s;
+
+        & p {
+            margin-bottom: 0;
+        }
+        
+        &:hover {
+            transition: all 1s;
+            color: $font-color;
+            text-shadow: 2px 2px #040402;
+        }
+
+        & i {
+            font-size: 50px;
+                margin-bottom: 10px;
+                transition: color 1s;
+                color: $subtitle-color;
+            }
+
+
+        &:hover i {
+            transition: color 1s, text-shadow 1s;
+            color: $neon-color;
+            text-shadow: 3px 3px #040402;
+        }
+    }
+}

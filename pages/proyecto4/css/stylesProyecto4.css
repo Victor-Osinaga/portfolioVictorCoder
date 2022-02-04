@@ -1,0 +1,37 @@
+body {
+  background: lightblue;
+}
+
+section {
+  color: white;
+}
+
+section form .mensaje {
+  height: 120px;
+}
+
+section form div {
+  margin-bottom: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  text-align: center;
+}
+
+section form div label {
+  font-size: 25px;
+  color: white;
+}
+
+section form div input {
+  width: 500px;
+}
+
+section form button {
+  display: block;
+  margin: 0 auto;
+  width: 75px;
+  height: 25px;
+}
+/*# sourceMappingURL=stylesProyecto4.css.map */

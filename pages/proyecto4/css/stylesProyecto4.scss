@@ -1,0 +1,38 @@
+body {
+	background: lightblue;
+}
+
+section {
+	color: white;
+	& form {
+
+		& .mensaje {
+			
+			height: 120px;
+		}
+		& div {
+			margin-bottom: 20px;
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			text-align: center;
+
+			& label {
+				font-size: 25px;
+				color: white;
+			}
+
+			& input {
+				width: 500px;
+			}
+		}
+
+		& button {
+			display: block;
+			margin: 0 auto;
+			width: 75px;
+			height: 25px;
+		}
+
+		
+	}
+}

@@ -1,0 +1,37 @@
+.services__grid {
+    .services__item {
+        padding: 0 15px;
+        background-color: $alternative-black-color;
+        box-shadow: 1px 0 20px transparent;
+        border-bottom: 5px solid transparent;
+        transition: box-shadow 1s, border-bottom 1s;
+
+        & i {
+            color: $subtitle-color;
+            font-size: 40px;
+            margin: 20px 0;
+            transition: color 1s;
+        }
+
+        &:hover {
+            box-shadow: 1px 0 20px $neon-color;
+            border-bottom: 5px solid $neon-color;
+            transition: box-shadow 1s, border-bottom 1s;
+
+            & i {
+                color: $neon-color;
+                transition: color 1s;
+            }
+        }
+
+        & h3 {
+            font-size: 18px;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        & p {
+            color: $subtitle-color;
+        }
+    }
+}
