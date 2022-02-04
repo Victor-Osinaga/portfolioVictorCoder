@@ -50,17 +50,6 @@ html {
   color: #f5f5f5;
 }
 
-.contenedor {
-  width: 100%;
-  display: inherit;
-  max-width: 1200px;
-  -webkit-box-pack: inherit;
-      -ms-flex-pack: inherit;
-          justify-content: inherit;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
 .navegacion {
   position: fixed;
   background: transparent;
@@ -183,93 +172,15 @@ html {
   transition: color 1s, text-shadow .5s;
 }
 
-.home {
-  min-height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 30px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: rgba(0, 0, 0, 0.8);
-  position: relative;
-}
-
-.home .home__background {
-  background-image: url(../assets/bg.webp);
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  height: 100%;
+.contenedor {
   width: 100%;
-  position: absolute;
-  z-index: -1;
-}
-
-.home .container__profile {
-  position: relative;
-  height: 380px;
-  border-radius: 5%;
-  -webkit-box-shadow: 5px 5px 5px transparent;
-          box-shadow: 5px 5px 5px transparent;
-  -webkit-transition: -webkit-box-shadow .7s ease-in-out;
-  transition: -webkit-box-shadow .7s ease-in-out;
-  transition: box-shadow .7s ease-in-out;
-  transition: box-shadow .7s ease-in-out, -webkit-box-shadow .7s ease-in-out;
-}
-
-.home .container__profile:hover {
-  -webkit-box-shadow: 0 0 75px #08fdd8, 0 0 35px #08FDd8, 0 0 20px #08FDd8, 0 0 10px #08FDd8, 0 0 5px #08FDd8;
-          box-shadow: 0 0 75px #08fdd8, 0 0 35px #08FDd8, 0 0 20px #08FDd8, 0 0 10px #08FDd8, 0 0 5px #08FDd8;
-  -webkit-transition: -webkit-box-shadow .7s ease-in-out;
-  transition: -webkit-box-shadow .7s ease-in-out;
-  transition: box-shadow .7s ease-in-out;
-  transition: box-shadow .7s ease-in-out, -webkit-box-shadow .7s ease-in-out;
-}
-
-.home .container__profile .home__profile {
-  height: 100%;
-  border-radius: 5%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.home .container__profile .home__profile2 {
-  height: 100%;
-  border-radius: 5%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  position: absolute;
-  left: 0px;
-  opacity: 1;
-  -webkit-transition: opacity .7s ease-in-out;
-  transition: opacity .7s ease-in-out;
-}
-
-.home .container__profile .home__profile2:hover {
-  opacity: 0;
-  -webkit-transition: opacity .7s ease-in-out;
-  transition: opacity .7s ease-in-out;
-}
-
-.home .home__description {
-  margin-left: 40px;
-}
-
-.home .home__description .home__title {
-  font-size: 60px;
-  text-shadow: 1px 1px black;
-  color: #08fdd8;
-}
-
-.home .home__description .home__title--primary, .home .home__description .home__title--secondary {
-  font-size: 45px;
-  color: #f5f5f5;
-  text-shadow: 0 10px 10px white;
+  display: inherit;
+  max-width: 1200px;
+  -webkit-box-pack: inherit;
+      -ms-flex-pack: inherit;
+          justify-content: inherit;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 #footer {
@@ -450,4 +361,50 @@ html {
     margin-bottom: 0;
   }
 }
-/*# sourceMappingURL=estilos.css.map */
+
+.services__grid .services__item {
+  padding: 0 15px;
+  background-color: #191919;
+  -webkit-box-shadow: 1px 0 20px transparent;
+          box-shadow: 1px 0 20px transparent;
+  border-bottom: 5px solid transparent;
+  -webkit-transition: border-bottom 1s, -webkit-box-shadow 1s;
+  transition: border-bottom 1s, -webkit-box-shadow 1s;
+  transition: box-shadow 1s, border-bottom 1s;
+  transition: box-shadow 1s, border-bottom 1s, -webkit-box-shadow 1s;
+}
+
+.services__grid .services__item i {
+  color: #8e8e8e;
+  font-size: 40px;
+  margin: 20px 0;
+  -webkit-transition: color 1s;
+  transition: color 1s;
+}
+
+.services__grid .services__item:hover {
+  -webkit-box-shadow: 1px 0 20px #08fdd8;
+          box-shadow: 1px 0 20px #08fdd8;
+  border-bottom: 5px solid #08fdd8;
+  -webkit-transition: border-bottom 1s, -webkit-box-shadow 1s;
+  transition: border-bottom 1s, -webkit-box-shadow 1s;
+  transition: box-shadow 1s, border-bottom 1s;
+  transition: box-shadow 1s, border-bottom 1s, -webkit-box-shadow 1s;
+}
+
+.services__grid .services__item:hover i {
+  color: #08fdd8;
+  -webkit-transition: color 1s;
+  transition: color 1s;
+}
+
+.services__grid .services__item h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.services__grid .services__item p {
+  color: #8e8e8e;
+}
+/*# sourceMappingURL=services.css.map */

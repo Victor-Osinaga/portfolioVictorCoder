@@ -50,17 +50,6 @@ html {
   color: #f5f5f5;
 }
 
-.contenedor {
-  width: 100%;
-  display: inherit;
-  max-width: 1200px;
-  -webkit-box-pack: inherit;
-      -ms-flex-pack: inherit;
-          justify-content: inherit;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
 .navegacion {
   position: fixed;
   background: transparent;
@@ -183,93 +172,15 @@ html {
   transition: color 1s, text-shadow .5s;
 }
 
-.home {
-  min-height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 30px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: rgba(0, 0, 0, 0.8);
-  position: relative;
-}
-
-.home .home__background {
-  background-image: url(../assets/bg.webp);
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  height: 100%;
+.contenedor {
   width: 100%;
-  position: absolute;
-  z-index: -1;
-}
-
-.home .container__profile {
-  position: relative;
-  height: 380px;
-  border-radius: 5%;
-  -webkit-box-shadow: 5px 5px 5px transparent;
-          box-shadow: 5px 5px 5px transparent;
-  -webkit-transition: -webkit-box-shadow .7s ease-in-out;
-  transition: -webkit-box-shadow .7s ease-in-out;
-  transition: box-shadow .7s ease-in-out;
-  transition: box-shadow .7s ease-in-out, -webkit-box-shadow .7s ease-in-out;
-}
-
-.home .container__profile:hover {
-  -webkit-box-shadow: 0 0 75px #08fdd8, 0 0 35px #08FDd8, 0 0 20px #08FDd8, 0 0 10px #08FDd8, 0 0 5px #08FDd8;
-          box-shadow: 0 0 75px #08fdd8, 0 0 35px #08FDd8, 0 0 20px #08FDd8, 0 0 10px #08FDd8, 0 0 5px #08FDd8;
-  -webkit-transition: -webkit-box-shadow .7s ease-in-out;
-  transition: -webkit-box-shadow .7s ease-in-out;
-  transition: box-shadow .7s ease-in-out;
-  transition: box-shadow .7s ease-in-out, -webkit-box-shadow .7s ease-in-out;
-}
-
-.home .container__profile .home__profile {
-  height: 100%;
-  border-radius: 5%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.home .container__profile .home__profile2 {
-  height: 100%;
-  border-radius: 5%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  position: absolute;
-  left: 0px;
-  opacity: 1;
-  -webkit-transition: opacity .7s ease-in-out;
-  transition: opacity .7s ease-in-out;
-}
-
-.home .container__profile .home__profile2:hover {
-  opacity: 0;
-  -webkit-transition: opacity .7s ease-in-out;
-  transition: opacity .7s ease-in-out;
-}
-
-.home .home__description {
-  margin-left: 40px;
-}
-
-.home .home__description .home__title {
-  font-size: 60px;
-  text-shadow: 1px 1px black;
-  color: #08fdd8;
-}
-
-.home .home__description .home__title--primary, .home .home__description .home__title--secondary {
-  font-size: 45px;
-  color: #f5f5f5;
-  text-shadow: 0 10px 10px white;
+  display: inherit;
+  max-width: 1200px;
+  -webkit-box-pack: inherit;
+      -ms-flex-pack: inherit;
+          justify-content: inherit;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 #footer {
@@ -450,4 +361,51 @@ html {
     margin-bottom: 0;
   }
 }
-/*# sourceMappingURL=estilos.css.map */
+
+.contact__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.contact__grid a {
+  text-decoration: none;
+}
+
+.contact__grid .contact__item {
+  background: #191919;
+  color: #8e8e8e;
+  padding: 50px;
+  border-radius: 10px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.contact__grid .contact__item p {
+  margin-bottom: 0;
+}
+
+.contact__grid .contact__item:hover {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  color: #f5f5f5;
+  text-shadow: 2px 2px #040402;
+}
+
+.contact__grid .contact__item i {
+  font-size: 50px;
+  margin-bottom: 10px;
+  -webkit-transition: color 1s;
+  transition: color 1s;
+  color: #8e8e8e;
+}
+
+.contact__grid .contact__item:hover i {
+  -webkit-transition: color 1s, text-shadow 1s;
+  transition: color 1s, text-shadow 1s;
+  color: #08fdd8;
+  text-shadow: 3px 3px #040402;
+}
+/*# sourceMappingURL=contact.css.map */

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../../css/normalize.css">
+    <link rel="stylesheet" href="./css/portfolio.css">
+    <title>Victor Osinaga | Portfolio</title>
+</head>
+<body>
+
+  <nav class="navegacion">
+    <div class="contenedor">
+      <div class="navegacion__logo">
+        <p class="navegacion__title">
+          <a href="#">Victor Osinaga</a>
+        </p>
+      </div>
+      <div class="navegacion__menu">
+        <i class="fas fa-bars"></i>
+      </div>
+      <ul class="navegacion__links">
+        <li class="navegacion__link active" data-ref="home">
+          <a href="../../index.html">Home</a>
+        </li>
+        <li class="navegacion__link" data-ref="about">
+          <a href="../about/about.html">About</a>
+        </li>
+        <li class="navegacion__link" data-ref="services">
+          <a href="../servicios/servicios.html">Services</a>
+        </li>
+        <li class="navegacion__link" data-ref="portfolio">
+          <a href="#">Portfolio</a>
+        </li>
+        <li class="navegacion__link" data-ref="contact">
+          <a href="../contact/contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+    <section id="portfolio">
+        <div class="container-fluid">
+          <h2 class="section__title">Portfolio</h2>
+          <h3 class="section__subtitle">Mis mejores proyectos</h3>
+          <div class="bg-white">
+            <div class="row row-cols-3">
+              <div class="portfolio__item col-12 col-sm-6 col-md-6 col-lg-4">
+                <picture>
+                <source srcset="assets/bg-ig.png" type="image/jpeg">
+                <img class="portfolio__img" alt="item portfolio">
+                </picture>
+                <div class="portfolio__description">
+                  <h3 class="portfolio__description--title">Login Instagram</h3>
+                  <p class="portfolio__description--text">
+                    Html, Css, Sass, Javascript 
+                  </p>
+                  <div class="button__container">
+                    <a 
+                      class="button" 
+                      href="./pages/instagram/registro.html"
+                      target="_BLANK"
+                      rel="noopener nooferrer">
+                      <i class="fas fa-globe-americas">
+                      </i> Sitio web
+                    </a>
+                    <a 
+                      class="button" 
+                      href="https://github.com/Victor-Osinaga/portfolioSEO/tree/master/pages/instagram"
+                      target="_BLANK"
+                      rel="noopener nooferrer" 
+                      >
+                      <i class="fab fa-github"></i> Código
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="portfolio__item col-12 col-sm-6 col-md-6 col-lg-4">
+                <picture>
+                  <source srcset="assets/bg-calculadora.png" type="image/jpeg">
+                  <img class="portfolio__img" alt="item portfolio">
+                </picture>
+                <div class="portfolio__description">
+                  <h3 class="portfolio__description--title">Calculadora</h3>
+                  <p class="portfolio__description--text">
+                    Html, Css, Sass, Javascript
+                  </p>
+                  <div class="button__container">
+                    <a 
+                      class="button"
+                      target="_BLANK"
+                      rel="noopener nooferrer"
+                      href="./pages/proyecto2/proyecto2.html"
+                    >
+                      <i class="fas fa-globe-americas"></i> Sitio web
+                    </a>
+                    <a 
+                      class="button" 
+                      target="_BLANK" 
+                      rel="noopener nooferrer" 
+                      href="https://github.com/Victor-Osinaga/portfolioSEO/tree/master/pages/proyecto2"
+                      >
+                      <i class="fa fa-github"></i> Código
+                    </a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="portfolio__item col-12 col-sm-6 col-md-6 col-lg-4">
+                <picture>
+                  <source srcset="assets/bg-ecommerce.png" type="image/jpeg">
+                  <img class="portfolio__img" alt="item portfolio">
+                </picture>
+                <div class="portfolio__description">
+                  <h3 class="portfolio__description--title">E-commerce</h3>
+                  <p class="portfolio__description--text">
+                    Html, Css, Sass, Javascript
+                  </p>
+                  <div class="button__container">
+                    <a 
+                      class="button" 
+                      href="./pages/proyecto3/proyecto3.html" 
+                      target="_BLANK" 
+                      rel="noopener nooferrer"
+                      >
+                      <i class="fas fa-globe-americas"></i> Sitio Web
+                    </a>
+                    <a 
+                      class="button" 
+                      href="https://github.com/Victor-Osinaga/portfolioSEO/tree/master/pages/proyecto3" target="_BLANK" 
+                      rel="noopener nooferrer"
+                      >
+                      <i class="fab fa-github"></i> Código
+                    </a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="portfolio__item col-12 col-sm-6 col-md-6 col-lg-4">
+                <picture>
+                    <source srcset="assets/bg-formulario.png" type="image/jpeg">
+                    <img class="portfolio__img" alt="item portfolio">
+                </picture>
+                <div class="portfolio__description">
+                  <h3 class="portfolio__description--title">Formulario</h3>
+                  <p class="portfolio__description--text">
+                    Html, Css, Sass, Bootstrap
+                  </p>
+                  <div class="button__container">
+                    <a  
+                        target="_BLANK" 
+                        rel="noopener nooferrer" 
+                        class="button" 
+                        href="./pages/proyecto4/proyecto4.html"
+                      >
+                        <i class="fas fa-globe-americas"></i> Sitio web
+                    </a>
+                    <a 
+                        class="button" 
+                        target="_BLANK" 
+                        rel="noopener nooferrer" 
+                        href="https://github.com/coquui/coquui.github.io/tree/main/pages/proyecto4"
+                      >
+                        <i class="fab fa-github"></i> Código
+                      </a>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="portfolio__item col-12 col-sm-6 col-md-6 col-lg-4">
+                <picture>
+                  <source srcset="assets/bg-ig.png" type="image/jpeg">
+                    <img class="portfolio__img" alt="item portfolio">
+                </picture>
+                <div class="portfolio__description">
+                  <h3 class="portfolio__description--title">Clon Instagram</h3>
+                  <p class="portfolio__description--text">
+                    Html, Css, Sass, Javascript
+                  </p>
+                  <div class="button__container">
+                    <a  
+                        target="_BLANK" 
+                        rel="noopener nooferrer" 
+                        class="button" 
+                        href="./pages/proyecto5/proyecto5.html"
+                      >
+                        <i class="fas fa-globe-americas"></i> Sitio web
+                    </a>
+                    <a class="button" target="_BLANK" rel="noopener nooferrer" href="https://github.com/coquui/coquui.github.io/tree/main/pages/proyecto5">
+                      <i class="fab fa-github"></i> Código
+                    </a>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="portfolio__item col-12 col-sm-6 col-md-6 col-lg-4">
+                <picture>
+                  <source srcset="assets/bg-ig.png" type="image/jpeg">
+                  <img class="portfolio__img" alt="item portfolio">
+                </picture>
+                <div class="portfolio__description">
+                  <h3 class="portfolio__description--title">Clon Instagram</h3>
+                  <p class="portfolio__description--text">
+                    Html, Css, Sass, Javascript
+                  </p>
+                  <div class="button__container">
+                    <a class="button" target="_BLANK" rel="noopener nooferrer" href="./pages/proyecto6/proyecto6.html">
+                      <i class="fas fa-globe-americas"></i> Sitio Web
+                    </a>
+                    <a class="button" target="_BLANK" rel="noopener nooferrer" href="https://github.com/coquui/coquui.github.io/tree/main/pages/proyecto6">
+                      <i class="fab fa-github"></i> Código
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer id="footer">
+        <div class="container">
+          <p>
+            <a href="#">#victorOsinaga</a>
+          </p>
+          <p>
+            Copyright © 2022.
+          </p>
+        </div>
+      </footer>
+
+      <script type="text/javascript" src="../../js/scripts.js"></script>
+      <script src="https://kit.fontawesome.com/46583ded3b.js" crossorigin="anonymous"></script>
+</body>
+</html>
