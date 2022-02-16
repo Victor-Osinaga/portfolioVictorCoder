@@ -1,0 +1,89 @@
+@import "./mixinsMediaQueries";
+
+$breakpoints: (
+    md: 767px,
+    lg: 991px,
+);
+
+@mixin breakpoints ($size) {
+    @if map-has-key($breakpoints, $size ) {
+        @media (max-width: #{map-get($breakpoints, $size)})
+        {
+            @content;
+        }
+    }
+}
+
+
+@include breakpoints (lg){
+    body {
+        & .navegacion {
+            @include navegacionMediaLG;
+        }
+
+        & .home {
+            flex-direction: column;
+            padding: 75px 0;
+
+            & .container__profile {
+                margin-top: 30px;
+        
+                & .home__profile {
+                    margin-bottom: 30px;
+                    margin-right: 0;
+                }
+            }
+
+            & .home__description {
+                margin: 10px 0;
+        
+                & .home__title--primary {
+                    font-size: 35px;
+                }
+                & .home__title {
+                    font-size: 45px;
+                }
+                & .home__title--secondary {
+                    font-size: 35px;
+                }
+            }
+        }
+    }
+}
+
+@include breakpoints (md) {
+
+    body {
+        & .navegacion {
+            @include navegacionMediaMD;
+        }
+
+        & .home {
+            padding: 60px 0;
+
+            & .container__profile {
+                margin-top: 30px;
+      
+                & .home__profile {
+                    margin-bottom: 30px;
+                }
+            }
+
+            & .home__description {
+                margin: 10px 0;
+      
+                & .home__title--primary {
+                    font-size: 25px;
+                }
+      
+                & .home__title {
+                    font-size: 30px;
+                }
+      
+                & .home__title--secondary {
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+}

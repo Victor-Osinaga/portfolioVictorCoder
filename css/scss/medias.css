@@ -1,0 +1,94 @@
+@media (max-width: 991px) {
+  body .navegacion .contenedor .navegacion__menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body .navegacion .contenedor .navegacion__links {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: rgba(0, 0, 0, 0.97);
+    font-size: 30px;
+    margin: 0 -20px;
+    z-index: 10;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    opacity: 0;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  body .navegacion .contenedor .navegacion__links .navegacion__link {
+    padding-left: 0px;
+    margin-top: 30px;
+  }
+  body .navegacion .contenedor .navegacion__links.visible {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    padding: 0;
+  }
+  body .home {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 75px 0;
+  }
+  body .home .container__profile {
+    margin-top: 30px;
+  }
+  body .home .container__profile .home__profile {
+    margin-bottom: 30px;
+    margin-right: 0;
+  }
+  body .home .home__description {
+    margin: 10px 0;
+  }
+  body .home .home__description .home__title--primary {
+    font-size: 35px;
+  }
+  body .home .home__description .home__title {
+    font-size: 45px;
+  }
+  body .home .home__description .home__title--secondary {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 767px) {
+  body .navegacion .contenedor .navegacion__links .navegacion__link {
+    padding-left: 0;
+  }
+  body .home {
+    padding: 60px 0;
+  }
+  body .home .container__profile {
+    margin-top: 30px;
+  }
+  body .home .container__profile .home__profile {
+    margin-bottom: 30px;
+  }
+  body .home .home__description {
+    margin: 10px 0;
+  }
+  body .home .home__description .home__title--primary {
+    font-size: 25px;
+  }
+  body .home .home__description .home__title {
+    font-size: 30px;
+  }
+  body .home .home__description .home__title--secondary {
+    font-size: 25px;
+  }
+}
+/*# sourceMappingURL=medias.css.map */

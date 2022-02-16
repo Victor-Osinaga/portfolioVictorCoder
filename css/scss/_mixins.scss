@@ -43,8 +43,8 @@ html {
 
 @mixin sectionTitleStyles {
     color: $font-color;
-	font-size: 35px;
 	margin-bottom: 40px;
+	font-size: 35px;
 	font-weight: bold;
 
     &::after {
@@ -177,12 +177,12 @@ html {
     }
 }
 
-@mixin footerStyles {
+@mixin footerStyles{
         color: $subtitle-color;
 	    background-color: rgba(0, 0, 0, 0.9);
-	    padding: 30px;
+	    padding: 15px 0;
 	    text-align: center;
-	    font-size: 14px;
+	    font-size: 15px;
 
         & .container {
             & p a {
