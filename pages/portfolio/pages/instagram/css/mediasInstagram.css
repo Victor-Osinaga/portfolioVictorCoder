@@ -1,81 +1,78 @@
 @media (min-width: 350px) and (max-width: 767px) {
-
-	.container__iphone {
-		display: none;
-	}
-
-	.container__div {
-	margin-top: -20px;
-	}
-
-	.descargaApp .form__item{
-		font-size: 15px
-	}
-
-	.form__input::placeholder {
-		font-size: 11px;
-	}
-
-	.ul__first li{
-	margin: 7px 7px;
-	font-size: 13px;
-	}
-
-	.registrate p, a {
-		font-size: 13px;
-	}
-
-	.registrate p a {
-		font-weight: 600;
-	}
-	
-	.iniciarConFacebook a{
-		font-size: 13px;
-		font-weight: 600;
-	}
-
-	.container__footer {
-		width: 100%;
-	}
+  body #registro .container .container__iphone {
+    display: none;
+  }
+  body #registro .container .container__right {
+    height: 100vh;
+  }
+  body #registro .container .container__right .container__div {
+    margin-top: -20px;
+  }
+  body #registro .container .container__right .container__div .form .form__item .form__input ::-webkit-input-placeholder {
+    font-size: 11px;
+  }
+  body #registro .container .container__right .container__div .form .form__item .form__input :-ms-input-placeholder {
+    font-size: 11px;
+  }
+  body #registro .container .container__right .container__div .form .form__item .form__input ::-ms-input-placeholder {
+    font-size: 11px;
+  }
+  body #registro .container .container__right .container__div .form .form__item .form__input ::placeholder {
+    font-size: 11px;
+  }
+  body #registro .container .container__right .container__div .form .iniciarConFacebook a {
+    font-size: 13px;
+    font-weight: 600;
+  }
+  body #registro .container .container__right .container__div .registrate p {
+    font-size: 13px;
+  }
+  body #registro .container .container__right .container__div .registrate p a {
+    font-size: 13px;
+    font-weight: 600;
+  }
+  body #footer .container__footer {
+    width: 95%;
+  }
+  body #footer .container__footer .ul__first li {
+    margin: 7px 7px;
+    font-size: 13px;
+  }
 }
-
-
-
-
-
 
 @media (min-width: 768px) and (max-width: 991px) {
-	.container__div {
-	margin-top: -20px;
-	}
-
-	.descargaApp .form__item{
-		font-size: 16px;
-	}
-
-	.form__input::placeholder {
-		font-size: 12px;
-	}
-
-	.ul__first li{
-	margin: 7px 15px;
-	font-size: 14px;
-	}
-
-	.registrate p, a {
-		font-size: 15px;
-	}
-
-	.registrate p a {
-		font-weight: 600;
-	}
-	
-	.iniciarConFacebook a{
-		font-size: 15px;
-		font-weight: 600;
-	}
-
-	.container__footer {
-		width: 90%;
-	}
+  body #registro .container .container__right .container__div {
+    margin-top: -20px;
+  }
+  body #registro .container .container__right .container__div .form .form__item .form__input ::-webkit-input-placeholder {
+    font-size: 12px;
+  }
+  body #registro .container .container__right .container__div .form .form__item .form__input :-ms-input-placeholder {
+    font-size: 12px;
+  }
+  body #registro .container .container__right .container__div .form .form__item .form__input ::-ms-input-placeholder {
+    font-size: 12px;
+  }
+  body #registro .container .container__right .container__div .form .form__item .form__input ::placeholder {
+    font-size: 12px;
+  }
+  body #registro .container .container__right .container__div .form .iniciarConFacebook a {
+    font-size: 15px;
+    font-weight: 600;
+  }
+  body #registro .container .container__right .container__div .registrate p {
+    font-size: 15px;
+  }
+  body #registro .container .container__right .container__div .registrate p a {
+    font-size: 15px;
+    font-weight: 600;
+  }
+  body #footer .container__footer {
+    width: 90%;
+  }
+  body #footer .container__footer .ul__first li {
+    margin: 7px 15px;
+    font-size: 14px;
+  }
 }
+/*# sourceMappingURL=mediasInstagram.css.map */

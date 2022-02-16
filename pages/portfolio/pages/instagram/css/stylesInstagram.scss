@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+	color: black;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+	background: #fff;
+	font-family: "Montserrat", sans-serif;
+
+	& #registro {
+		& .container {
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-content: center;
+			gap: 10px;
+	
+			& .container__iphone {
+				background-color: #fff;
+				display: flex;
+				align-items: center;
+	
+				& picture {
+					& .marcoiphone {
+						max-width: 405px;
+					}
+				}
+			}
+	
+			& .container__right {
+				display: flex;
+				align-items: center;
+				max-width: 340px;
+				text-align: center;
+	
+				& .container__div {
+					background: #fff;
+	
+					& .form {
+						display: flex;
+						width: 100%;
+						flex-direction: column;
+						margin-bottom: 12px;
+						box-shadow: .3px .3px 1px gray, -.3px -.3px 1px gray;
+	
+						& .logo__img {
+							width: 175px;
+							margin: 0 auto;
+							margin: 20px auto 30px;
+						}
+	
+						& .form__item {
+							margin-bottom: 20px;
+							
+	
+							& .form__input {
+								margin-bottom: 10px;
+								width: 80%;
+								height: 35px;
+								border: none;
+								box-shadow: .3px .3px 1px gray, -.3px -.3px 1px gray;
+								padding-left: 10px;
+								font-size: 14px;
+	
+								::placeholder {
+									font-size: 11px;
+								}
+							}
+	
+							& .container__buttom {
+								width: 80%;
+								height: 30px;
+								margin: 0 auto -5px;
+								display: flex;
+								align-items: center;
+								justify-content: center;
+								background-color: rgba(0,149,246,.3);
+
+								& a {
+									text-decoration: none;
+
+									& h5{
+										font-size: 14px;
+										color: #fff;
+									}
+								}
+							}
+						}
+	
+						& .form__item--margin {
+							margin-bottom: 10px;
+						}
+	
+						& .linea {
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							margin-bottom: 30px;
+	
+							& div {
+								width: 110px;
+								box-shadow: .2px .2px 1px gray;
+								height: 1px;
+	
+								& span {
+									color: gray;
+									margin: 0 15px;
+								}
+							}
+						}
+	
+						& .iniciarConFacebook {
+							display: flex;
+							align-items: center;
+							justify-content: center;
+	
+							& a {
+								color: #385185;
+								font-weight: 500;
+								font-size: 14px;
+								padding-left: 10px;
+								text-decoration: none;
+							}
+						}
+	
+						& .olvidado {
+							& a {
+								color: #00376b;
+								font-size: 13px;
+								text-decoration: none;
+							}
+						}
+					}
+	
+					& .registrate {
+						box-shadow: .3px .3px 1px gray, -.3px -.3px 1px gray;
+						height: 50px;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						background: #fff;
+	
+						& a {
+							color: #0095f6;
+							text-decoration: none;
+						}
+					}
+	
+					& .descargaApp {
+						& .subtext {
+							margin: 10px 0;
+						}
+
+						& .stores {
+							display: flex;
+							justify-content: space-evenly;
+	
+							& a {
+								font-size: 10px;
+								color: white;
+								text-decoration: none;
+	
+								& span {
+									font-size: 15px;
+									display: block;
+								}
+							}
+	
+							& .playStore {
+								padding: 0 5px;
+								background-color: black;
+								display: flex;
+								border-radius: 5px;
+								height: 55px;
+								align-items: center;
+
+								& .div__img {
+									& .svg__store {
+										width: 25px;
+										height: 25px;
+										margin-right: 5px;
+									}
+								}
+							}
+	
+							& .appStore {
+								@extend .playStore;
+
+								& .div__img {
+									& .svg__apple {
+										@extend .svg__store
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	& #footer {
+		width: 100%;
+
+		& .container__footer {
+			width: 75%;
+			margin: 0 auto;
+
+			& .ul__first {
+				display: flex;
+				justify-content: center;
+				flex-wrap: wrap;
+				margin-bottom: 20px;
+
+				& li{
+					color: gray;
+					list-style: none;
+					margin: 6px 7px;
+					font-size: 15px;
+					cursor: pointer;
+
+					:hover {
+						cursor: pointer;
+					}
+				}
+			}
+
+			& .ul__second {
+				margin-bottom: 50px;
+			}
+		}
+	}
+}
