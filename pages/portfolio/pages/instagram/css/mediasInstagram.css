@@ -2,11 +2,11 @@
   body #registro .container .container__iphone {
     display: none;
   }
-  body #registro .container .container__right {
-    height: 100vh;
-  }
   body #registro .container .container__right .container__div {
     margin-top: -20px;
+  }
+  body #registro .container .container__right .container__div .form .logo__img {
+    margin: 0 auto;
   }
   body #registro .container .container__right .container__div .form .form__item .form__input ::-webkit-input-placeholder {
     font-size: 11px;
@@ -43,6 +43,9 @@
 @media (min-width: 768px) and (max-width: 991px) {
   body #registro .container .container__right .container__div {
     margin-top: -20px;
+  }
+  body #registro .container .container__right .container__div .form .logo__img {
+    margin: 0 auto;
   }
   body #registro .container .container__right .container__div .form .form__item .form__input ::-webkit-input-placeholder {
     font-size: 12px;

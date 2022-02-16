@@ -19,8 +19,12 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+body #registro {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
 body #registro .container {
-  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -29,6 +33,7 @@ body #registro .container {
           justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
+  padding: 20px 0;
   gap: 10px;
 }
 
@@ -77,8 +82,7 @@ body #registro .container .container__right .container__div .form {
 
 body #registro .container .container__right .container__div .form .logo__img {
   width: 175px;
-  margin: 0 auto;
-  margin: 20px auto 30px;
+  margin: 20px auto 20px;
 }
 
 body #registro .container .container__right .container__div .form .form__item {

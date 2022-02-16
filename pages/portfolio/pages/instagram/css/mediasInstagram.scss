@@ -6,13 +6,14 @@
 				& .container__iphone {
 					display: none;
 				}
-
 				& .container__right {
-					height: 100vh;
 					& .container__div {
 						margin-top: -20px;
 
 						& .form {
+							& .logo__img {
+								margin: 0 auto;
+							}
 							& .form__item {
 								& .form__input {
 									::placeholder {
@@ -70,6 +71,9 @@
 						margin-top: -20px;
 
 						& .form {
+							& .logo__img {
+								margin: 0 auto;
+							}
 							& .form__item {
 								& .form__input {
 									::placeholder {
