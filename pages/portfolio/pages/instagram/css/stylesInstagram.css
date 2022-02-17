@@ -97,7 +97,7 @@ body #registro .container .container__right .container__div .form .form__item .f
   -webkit-box-shadow: .3px .3px 1px gray, -.3px -.3px 1px gray;
           box-shadow: .3px .3px 1px gray, -.3px -.3px 1px gray;
   padding-left: 10px;
-  font-size: 14px;
+  font-size: 11px;
 }
 
 body #registro .container .container__right .container__div .form .form__item .form__input ::-webkit-input-placeholder {
@@ -248,7 +248,7 @@ body #registro .container .container__right .container__div .descargaApp .stores
   display: -ms-flexbox;
   display: flex;
   border-radius: 5px;
-  height: 55px;
+  padding: 5px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;

@@ -73,7 +73,7 @@ body {
 								border: none;
 								box-shadow: .3px .3px 1px gray, -.3px -.3px 1px gray;
 								padding-left: 10px;
-								font-size: 14px;
+								font-size: 11px;
 	
 								::placeholder {
 									font-size: 11px;
@@ -184,7 +184,7 @@ body {
 								background-color: black;
 								display: flex;
 								border-radius: 5px;
-								height: 55px;
+								padding: 5px;
 								align-items: center;
 
 								& .div__img {

@@ -1,4 +1,16 @@
-.container {
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body .container {
+  background-image: url(../assets/galaxy.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8,42 +20,24 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
-  min-height: 100vh;
-  background-color: red;
 }
 
-.container__bg {
-  position: absolute;
-  width: 100%;
-  background-color: green;
-  height: 100vh;
-}
-
-.container__bg img {
-  width: 100%;
-  height: 100vh;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.container__glass {
-  position: relative;
-  width: 350px;
-  height: 500px;
-  border-radius: 7px;
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
-  background: rgba(255, 255, 255, 0.05);
-  overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.02);
+body .container .container__glass {
+  width: 80%;
+  height: 80%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr;
+  border-radius: 7px;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.02);
+  background: rgba(255, 255, 255, 0.05);
 }
 
-.container__glass input {
+body .container .container__glass .input {
   grid-row: span 2;
   grid-column: span 4;
   background-color: transparent;
@@ -51,15 +45,15 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.04);
 }
 
-.container__glass input:hover {
+body .container .container__glass .input:hover {
   cursor: default;
 }
 
-.container__glass input:focus {
+body .container .container__glass .input:focus {
   outline: none;
 }
 
-.container__glass span {
+body .container .container__glass span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -71,22 +65,12 @@
           align-items: center;
   color: white;
   border-radius: 5px;
-  font-size: 20px;
+  font-weight: bold;
   outline: 1px solid rgba(255, 255, 255, 0.02);
 }
 
-.container__glass span:hover {
-  cursor: pointer;
+body .container .container__glass span:hover {
   background: rgba(8, 253, 216, 0.345);
-}
-
-@media screen and (max-width: 767px) {
-  .container {
-    background: -webkit-gradient(linear, left top, right top, from(black), color-stop(50%, #4f4d4d), to(black));
-    background: linear-gradient(90deg, black 0%, #4f4d4d 50%, black 100%);
-  }
-  .container__bg {
-    display: none;
-  }
+  cursor: pointer;
 }
 /*# sourceMappingURL=stylesCalculadora.css.map */
