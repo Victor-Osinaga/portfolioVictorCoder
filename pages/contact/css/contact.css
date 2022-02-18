@@ -128,7 +128,7 @@ body .navegacion .contenedor .navegacion__links {
 }
 
 body .navegacion .contenedor .navegacion__links .div__logo {
-  visibility: visible;
+  visibility: hidden;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;

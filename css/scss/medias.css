@@ -69,6 +69,9 @@
   body .navegacion .contenedor .navegacion__links .navegacion__link {
     padding-left: 0;
   }
+  body .navegacion .contenedor .navegacion__links .div__logo {
+    visibility: visible;
+  }
   body .home {
     padding: 30px 0 0;
   }
