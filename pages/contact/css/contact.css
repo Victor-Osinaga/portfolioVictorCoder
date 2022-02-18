@@ -127,6 +127,41 @@ body .navegacion .contenedor .navegacion__links {
           align-items: center;
 }
 
+body .navegacion .contenedor .navegacion__links .div__logo {
+  visibility: visible;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px 0;
+  background: rgba(49, 49, 49, 0.7);
+}
+
+body .navegacion .contenedor .navegacion__links .div__logo .p1 {
+  font-weight: bold;
+  font-size: 45px;
+  height: 70px;
+  margin-top: 20px;
+  color: red;
+  text-shadow: #08fdd8 -5px 0px 1px;
+}
+
+body .navegacion .contenedor .navegacion__links .div__logo .p2 {
+  font-weight: bold;
+}
+
+body .navegacion .contenedor .navegacion__links .div__logo h4 {
+  color: gray;
+  font-size: 14px;
+}
+
 body .navegacion .contenedor .navegacion__links .navegacion__link {
   padding-left: 20px;
 }

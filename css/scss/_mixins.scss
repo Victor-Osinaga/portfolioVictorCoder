@@ -142,6 +142,34 @@ html {
 			height: 100%;
 			align-items: center;
 
+            & .div__logo {
+                visibility: visible;
+                width: 100%; 
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                padding: 10px 0;
+                background: rgba(49, 49, 49, .7);
+
+                & .p1 {
+                    font-weight: bold; 
+                    font-size: 45px; 
+                    height: 70px;
+                    margin-top: 20px;
+                    color: red;
+                    text-shadow: #08fdd8 -5px 0px 1px;
+                }
+
+                & .p2 {
+                    font-weight: bold;
+                }
+
+                & h4 {
+                    color: gray; 
+                    font-size: 14px;
+                }
+            }
+
             & .navegacion__link {
                 padding-left: 20px;
 

@@ -72,6 +72,17 @@ body {
                 font-size: 60px;
                 text-shadow: 1px 1px black;
                 color: $neon-color;
+
+                & .span-v {
+                color: white;
+                display: inline-block;
+
+                    &:first-letter {
+                        font-weight: bold;
+                        color: red;
+                        text-shadow: $neon-color -5px 0px 1px;
+                    }
+                }
             }
 
             & .home__title--primary, .home__title--secondary {
