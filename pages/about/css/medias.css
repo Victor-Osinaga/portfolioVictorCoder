@@ -77,7 +77,7 @@
     visibility: visible;
   }
   body #about {
-    padding: 60px 0;
+    padding: 50px 0;
   }
   body #about .container .about__grid .about__description .section__subtitle {
     font-weight: normal;

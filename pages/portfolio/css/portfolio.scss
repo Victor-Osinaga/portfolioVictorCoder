@@ -11,6 +11,8 @@ body {
         @include sectionStyles;
 
         & .container-fluid {
+            padding: 0;
+
             & .section__title {
                 @include sectionTitleStyles;
             }
@@ -21,11 +23,14 @@ body {
 
             & .bg-white {
                 & .row {
+                    padding: 0;
+                    
                     & .portfolio__item {
                         position: relative;
                         object-fit: cover;
                         overflow: hidden;
                         font-size: 15px;
+                        padding: 0;
 
                         &:hover .portfolio__description {
                             visibility: visible;
