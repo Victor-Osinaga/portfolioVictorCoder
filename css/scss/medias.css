@@ -37,6 +37,9 @@
     transition: all 0.5s;
     padding: 0;
   }
+  body .navegacion .contenedor .navegacion__links .div__logo {
+    visibility: visible;
+  }
   body .home {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

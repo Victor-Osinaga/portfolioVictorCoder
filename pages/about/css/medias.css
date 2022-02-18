@@ -37,6 +37,9 @@
     transition: all 0.5s;
     padding: 0;
   }
+  body .navegacion .contenedor .navegacion__links .div__logo {
+    visibility: visible;
+  }
   body #about {
     padding: 75px 0;
   }
@@ -69,6 +72,9 @@
 @media (max-width: 767px) {
   body .navegacion .contenedor .navegacion__links .navegacion__link {
     padding-left: 0;
+  }
+  body .navegacion .contenedor .navegacion__links .div__logo {
+    visibility: visible;
   }
   body #about {
     padding: 60px 0;

@@ -37,6 +37,9 @@
     transition: all 0.5s;
     padding: 0;
   }
+  body .navegacion .contenedor .navegacion__links .div__logo {
+    visibility: visible;
+  }
   body #portfolio {
     padding: 75px 0;
   }

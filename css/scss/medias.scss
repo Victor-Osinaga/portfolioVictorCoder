@@ -19,6 +19,14 @@ $breakpoints: (
     body {
         & .navegacion {
             @include navegacionMediaLG;
+
+            & .contenedor {
+                & .navegacion__links {
+                    & .div__logo {
+                        visibility: visible;
+                    }
+                }
+            }
         }
 
         & .home {
@@ -63,7 +71,8 @@ $breakpoints: (
                         visibility: visible;
                     }
                 }
-            }  
+            }
+  
         }
 
         & .home {
