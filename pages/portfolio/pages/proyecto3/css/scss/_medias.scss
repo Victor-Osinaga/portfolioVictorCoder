@@ -1,6 +1,6 @@
 $breakpoints: (
     md: 767px,
-    lg: 991px,
+    lg: 1150px,
 );
 
 @mixin breakpoints ($size) {
@@ -11,6 +11,7 @@ $breakpoints: (
         }
     }
 }
+
 
 @include breakpoints (lg) {
 
@@ -66,6 +67,18 @@ $breakpoints: (
                     height: 100vh;
                 }
             }
+        }
+    }
+
+    .home {
+        & .home__bg {
+            background-image: url(../assets/bg.jpg);
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
         }
     }
 

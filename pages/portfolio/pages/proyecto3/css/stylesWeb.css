@@ -1,6 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@400;500;700;900&family=Shizuru&display=swap");
 body {
   font-family: 'Roboto', sans-serif;
+  background: purple;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
 }
 
 * a {
@@ -12,12 +16,13 @@ section {
 }
 
 section .section__title {
-  color: purple;
+  font-family: 'Gideon Roman', cursive;
+  color: white;
   font-size: 35px;
 }
 
 section .section__subtitle {
-  color: gray;
+  color: #6d026d;
   font-size: 25px;
   font-weight: bold;
 }
@@ -30,7 +35,7 @@ section .section__subtitle {
 
 .nav {
   position: fixed;
-  background: white;
+  background: purple;
   -webkit-transition: background .5s;
   transition: background .5s;
   display: -webkit-box;
@@ -71,9 +76,11 @@ section .section__subtitle {
 }
 
 .nav .contenedor .navegacion__logo .navegacion__title a {
+  font-family: 'Shizuru', cursive;
   font-weight: bold;
   text-decoration: none;
   font-size: 30px;
+  color: white;
 }
 
 .nav .contenedor .navegacion__menu {
@@ -137,10 +144,13 @@ section .section__subtitle {
 .nav .contenedor .navegacion__links .navegacion__link {
   list-style: none;
   margin-left: 10px;
+  font-family: 'Gideon Roman', cursive;
 }
 
 .nav .contenedor .navegacion__links .navegacion__link a {
   text-decoration: none;
+  color: white;
+  padding-left: 15px;
 }
 
 .nav .contenedor .navegacion__links .navegacion__link .submenu {
@@ -197,6 +207,7 @@ section .section__subtitle {
   width: 100%;
   height: 100%;
   text-align: center;
+  font-family: 'Gideon Roman', cursive;
 }
 
 .home .home__description .home__description--title {
@@ -232,6 +243,10 @@ section .section__subtitle {
   background-color: white;
 }
 
+.productos {
+  background: #973197;
+}
+
 .productos .container .productos__grid {
   display: -ms-grid;
   display: grid;
@@ -241,11 +256,12 @@ section .section__subtitle {
 }
 
 .productos .container .productos__grid .productos__item {
+  outline: 1px solid rgba(109, 2, 109, 0.404);
   margin-bottom: 25px;
 }
 
 .productos .container .productos__grid .productos__item .productos__bg:hover img {
-  outline: 2px solid purple;
+  outline: 5px solid purple;
 }
 
 .productos .container .productos__grid .productos__item .productos__description .button__container {
@@ -264,12 +280,59 @@ section .section__subtitle {
   border-radius: 2px;
 }
 
+.envios {
+  padding: 0;
+  background-image: url(../assets/envios2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  width: 100%;
+}
+
+.envios .container {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.envios .container .section__title {
+  margin: 0;
+  padding-top: 30px;
+}
+
+.envios .container .section__subtitle {
+  color: black;
+  font-weight: bold;
+}
+
 .envios .container i {
   font-size: 100px;
+  color: black;
+}
+
+.pagos {
+  background: #973197;
+  border-bottom: 1px solid rgba(109, 2, 109, 0.342);
 }
 
 .pagos .container i {
   font-size: 100px;
+}
+
+.contacto {
+  background: #973197;
 }
 
 .contacto .container .container__contacto {
@@ -279,10 +342,25 @@ section .section__subtitle {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  outline: 1px solid rgba(109, 2, 109, 0.404);
 }
 
 .contacto .container .container__contacto div {
   font-size: 25px;
+}
+
+.contacto .container .container__contacto div i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 40px;
+}
+
+.contacto .container .container__contacto div a {
+  color: white;
 }
 
 .footer {
@@ -295,7 +373,7 @@ section .section__subtitle {
   font-size: 19px;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1150px) {
   .nav {
     height: 50px;
   }
@@ -350,6 +428,15 @@ section .section__subtitle {
     padding: 0;
     width: 100%;
     height: 100vh;
+  }
+  .home .home__bg {
+    background-image: url(../assets/bg.jpg);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
   }
   .productos .container .productos__grid {
     display: -ms-grid;

@@ -1,7 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@400;500;700;900&family=Shizuru&display=swap');
+
 
 body {
     font-family: 'Roboto', sans-serif;
+    background: purple;
+    box-sizing: border-box;
+    margin: 0;
 }
 
 * a {
@@ -12,12 +16,13 @@ section {
     padding: 40px 0;
 
     & .section__title {
-        color: purple;
+        font-family: 'Gideon Roman', cursive;
+        color: white;
         font-size: 35px;
     }
 
     & .section__subtitle {
-        color: gray;
+        color: rgb(109, 2, 109);
         font-size: 25px;
         font-weight: bold;
     }
@@ -32,7 +37,7 @@ section {
 
 .nav {
     position: fixed;
-	background: white;
+    background: purple;
 	transition: background .5s;
 	display: flex;
 	justify-content: space-between;
@@ -59,9 +64,12 @@ section {
             & .navegacion__title {
             
                 & a {
+                    font-family: 'Shizuru', cursive;
                     font-weight: bold;
                     text-decoration: none;
                     font-size: 30px;
+                    color: white;
+                    
                 }
             }
         }
@@ -101,9 +109,12 @@ section {
             & .navegacion__link {
                 list-style: none;
                 margin-left: 10px;
+                font-family: 'Gideon Roman', cursive;
 
                 & a {
                     text-decoration: none;
+                    color: white;
+                    padding-left: 15px;
                 }
 
                 & .submenu {
@@ -153,6 +164,7 @@ section {
         width: 100%;
         height: 100%;
         text-align: center;
+        font-family: 'Gideon Roman', cursive;
 
         & .home__description--title {
             font-size: 50px;
@@ -184,17 +196,19 @@ section {
 }
 
 .productos {
+    background: rgb(151, 49, 151);
     & .container {
         & .productos__grid {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
             gap: 10px;
 
-            & .productos__item {
+            & .productos__item {    
+                outline: 1px solid rgba(109, 2, 109, 0.404);
 
                 margin-bottom: 25px;
                 & .productos__bg:hover img {
-                    outline: 2px solid purple;
+                    outline: 5px solid purple;
 
                 }
 
@@ -217,14 +231,44 @@ section {
 }
 
 .envios {
+    padding: 0;
+    background-image: url(../assets/envios2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    width: 100%;
+    
     & .container {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        
+        & .section__title {
+            margin: 0;
+            padding-top: 30px;
+        }
+
+        & .section__subtitle {
+            color: black;
+            font-weight: bold;
+        }
+        
+        
         & i {
             font-size: 100px;
+            color: black;
         }
     }
 }
 
 .pagos {
+    background: rgb(151, 49, 151);
+    border-bottom: 1px solid rgba(109, 2, 109, 0.342);
+
     & .container {
         & i {
             font-size: 100px;
@@ -233,12 +277,25 @@ section {
 }
 
 .contacto {
+    background: rgb(151, 49, 151);
+
     & .container {
         & .container__contacto {
             display: flex;
             justify-content: space-evenly;
+            outline: 1px solid rgba(109, 2, 109, 0.404);
             & div {
                 font-size: 25px;
+
+                & i {
+                    display: flex;
+                    justify-content: center;
+                    font-size: 40px;
+                }
+
+                & a {
+                    color: white;
+                }
             }
         }
     }
